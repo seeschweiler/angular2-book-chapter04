@@ -1,6 +1,6 @@
 # Angular 2
 ## A Practical Introduction To The New Web Development Platform
-This is the repository of the sample applications from **chapter 04: Lifecycle** from the book **Angular 2 - A Practical Introduction To The New Web Development Plattform**.
+This is the repository of the sample applications from **chapter 04: Events** from the book **Angular 2 - A Practical Introduction To The New Web Development Plattform**.
 
 ![](https://s3.amazonaws.com/titlepages.leanpub.com/angular2-book/large?1445601551)
 

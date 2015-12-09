@@ -1,0 +1,23 @@
+{
+  "name": "app04-02",
+  "version": "1.0.0",
+  "description": "Angular 2 Sample Application",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc -p src -w",
+    "start": "live-server --open=src"
+  },
+  "keywords": [],
+  "author": "Sebastian Eschweiler",
+  "license": "ISC",
+  "dependencies": {
+    "angular2": "2.0.0-alpha.44",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.1.4",
+    "systemjs": "0.19.2"
+  },
+  "devDependencies": {
+    "live-server": "^0.8.2",
+    "typescript": "^1.7.3"
+  }
+}

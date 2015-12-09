@@ -7,7 +7,7 @@ import {bootstrap, Component} from 'angular2/angular2';
       <div class="panel-heading">Angular 2 Event Binding Demo - Start typing here:</div>
       <div class="panel-body">
         <div>
-          <input (keyup)="onKey($event)">
+          <input #a (keyup.enter)="onKey(a.value)">
         </div>
         <hr />
         <div>
@@ -20,8 +20,8 @@ import {bootstrap, Component} from 'angular2/angular2';
 })
 class KeyUpComponent {
   values='';
-  onKey(event:Event) {
-    this.values += event.target.value + ' | ';  
+  onKey(value) {
+    this.values += value + ' | ';  
   }
   reset() {
     this.values = "";
