@@ -1,1 +1,0 @@
-{"version":3,"file":"lifecycleevent.js","sourceRoot":"","sources":["lifecycleevent.ts"],"names":["LifecycleEvent","LifecycleEvent.constructor"],"mappings":"AAAA;IAIEA,wBAAYA,aAAqBA,EAAEA,SAAiBA;QAClDC,IAAIA,CAACA,aAAaA,GAAGA,aAAaA,CAACA;QACnCA,IAAIA,CAACA,SAASA,GAAGA,SAASA,CAACA;IAC7BA,CAACA;IACHD,qBAACA;AAADA,CAACA,AARD,IAQC;AARY,sBAAc,iBAQ1B,CAAA"}

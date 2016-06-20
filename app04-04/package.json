@@ -1,23 +1,39 @@
 {
-  "name": "app04-02",
+  "name": "angular2-quickstart",
   "version": "1.0.0",
-  "description": "Angular 2 Sample Application",
-  "main": "index.js",
   "scripts": {
-    "tsc": "tsc -p src -w",
-    "start": "live-server --open=src"
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "lite": "lite-server",
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings"
   },
-  "keywords": [],
-  "author": "Sebastian Eschweiler",
   "license": "ISC",
   "dependencies": {
-    "angular2": "2.0.0-alpha.48",
+    "@angular/common":  "2.0.0-rc.2",
+    "@angular/compiler":  "2.0.0-rc.2",
+    "@angular/core":  "2.0.0-rc.2",
+    "@angular/http":  "2.0.0-rc.2",
+    "@angular/platform-browser":  "2.0.0-rc.2",
+    "@angular/platform-browser-dynamic":  "2.0.0-rc.2",
+    "@angular/router":  "2.0.0-rc.2",
+    "@angular/router-deprecated":  "2.0.0-rc.2",
+    "@angular/upgrade":  "2.0.0-rc.2",
+    "systemjs": "0.19.27",
+    "core-js": "^2.4.0",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.12",
+    "angular2-in-memory-web-api": "0.0.12",
     "bootstrap": "^3.3.6",
-    "jquery": "^2.1.4",
-    "systemjs": "0.19.2"
+    "jquery": "^2.1.4"
   },
   "devDependencies": {
-    "live-server": "^0.8.2",
-    "typescript": "^1.7.3"
+    "concurrently": "^2.0.0",
+    "lite-server": "^2.2.0",
+    "typescript": "^1.8.10",
+    "typings":"^1.0.4"
   }
 }
+
