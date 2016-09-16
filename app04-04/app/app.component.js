@@ -9,47 +9,45 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var common_1 = require('@angular/common');
-var App = (function () {
-    function App() {
+var AppComponent = (function () {
+    function AppComponent() {
         this.lifecycleEvents = [];
     }
-    App.prototype.reset = function () {
+    AppComponent.prototype.reset = function () {
         this.lifecycleEvents = [];
     };
-    App.prototype.ngOnInit = function () {
+    AppComponent.prototype.ngOnInit = function () {
         this.lifecycleEvents.push("ngOnInit");
     };
-    App.prototype.ngOnChange = function (changeRecord) {
+    AppComponent.prototype.ngOnChange = function (changeRecord) {
         this.lifecycleEvents.push("onOnChange");
     };
-    App.prototype.ngDoCheck = function () {
+    AppComponent.prototype.ngDoCheck = function () {
         this.lifecycleEvents.push("ngDoCheck");
     };
-    App.prototype.ngAfterContentInit = function () {
+    AppComponent.prototype.ngAfterContentInit = function () {
         this.lifecycleEvents.push("ngAfterContentInit");
     };
-    App.prototype.ngAfterContentChecked = function () {
+    AppComponent.prototype.ngAfterContentChecked = function () {
         this.lifecycleEvents.push("ngAfterContentChecked");
     };
-    App.prototype.ngAfterViewInit = function () {
+    AppComponent.prototype.ngAfterViewInit = function () {
         this.lifecycleEvents.push("ngAfterViewInit");
     };
-    App.prototype.ngAfterViewChecked = function () {
+    AppComponent.prototype.ngAfterViewChecked = function () {
         this.lifecycleEvents.push("ngAfterViewChecked");
     };
-    App.prototype.ngOnDestroy = function () {
+    AppComponent.prototype.ngOnDestroy = function () {
         this.lifecycleEvents.push("ngOnDestroy");
     };
-    App = __decorate([
+    AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n    <div class=\"panel panel-primary\">\n      <div class=\"panel-heading\">Component Lifecycle Event Tracker</div>\n      <div class=\"panel-body\">\n        <div>\n          <h5>List of Lifecycle Events of Component:<button class=\"btn btn-sm btn-primary pull-right\" (click)=\"reset()\">Reset</button></h5>\n          <br />\n            <table class=\"table table-condensed table-hover table-bordered\">\n              <thead>\n                <th>#</th>\n                <th>Lifecycle Event</th>\n              </thead>\n              <tbody>\n                <tr *ngFor=\"let lifecycleEvent of lifecycleEvents, let i=index\">\n                  <td>{{i+1}}</td>\n                  <td>{{lifecycleEvent}}</td>\n                </tr>\n              </tbody>\n            </table>\n\n        </div>\n      </div>\n    </div>\n    ",
-            directives: [common_1.CORE_DIRECTIVES]
+            template: "\n    <div class=\"panel panel-primary\">\n      <div class=\"panel-heading\">Component Lifecycle Event Tracker</div>\n      <div class=\"panel-body\">\n        <div>\n          <h5>List of Lifecycle Events of Component:<button class=\"btn btn-sm btn-primary pull-right\" (click)=\"reset()\">Reset</button></h5>\n          <br />\n            <table class=\"table table-condensed table-hover table-bordered\">\n              <thead>\n                <th>#</th>\n                <th>Lifecycle Event</th>\n              </thead>\n              <tbody>\n                <tr *ngFor=\"let lifecycleEvent of lifecycleEvents, let i=index\">\n                  <td>{{i+1}}</td>\n                  <td>{{lifecycleEvent}}</td>\n                </tr>\n              </tbody>\n            </table>\n\n        </div>\n      </div>\n    </div>\n    "
         }), 
         __metadata('design:paramtypes', [])
-    ], App);
-    return App;
+    ], AppComponent);
+    return AppComponent;
 }());
-exports.App = App;
+exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map

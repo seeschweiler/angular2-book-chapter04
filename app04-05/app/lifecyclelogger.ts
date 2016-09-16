@@ -1,5 +1,4 @@
 import {Component, Input} from '@angular/core';
-import {CORE_DIRECTIVES} from '@angular/common';
 
 import {LifecycleEvent} from './lifecycleevent'
 
@@ -24,8 +23,7 @@ import {LifecycleEvent} from './lifecycleevent'
               </tbody>
             </table>
         </div>
-    `,
-    directives: [CORE_DIRECTIVES]
+    `
 })
 export class LifecycleLogger {
   @Input() lifecycleEvents:Array<LifecycleEvent>;

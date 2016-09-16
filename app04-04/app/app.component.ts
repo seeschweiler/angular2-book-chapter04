@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import {CORE_DIRECTIVES} from '@angular/common'
 
 @Component({
   selector: 'my-app',
@@ -26,10 +25,9 @@ import {CORE_DIRECTIVES} from '@angular/common'
         </div>
       </div>
     </div>
-    `,
-    directives: [CORE_DIRECTIVES]
+    `
 })
-export class App {
+export class AppComponent {
   lifecycleEvents:Array<string>;
   constructor() {
     this.lifecycleEvents = [];

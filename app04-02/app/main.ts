@@ -1,3 +1,4 @@
-import { bootstrap }    from '@angular/platform-browser-dynamic';
-import { KeyUpComponent } from './app.component';
-bootstrap(KeyUpComponent);
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app.module';
+const platform = platformBrowserDynamic();
+platform.bootstrapModule(AppModule);

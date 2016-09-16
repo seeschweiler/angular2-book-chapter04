@@ -9,7 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var common_1 = require('@angular/common');
 var lifecycleevent_1 = require('./lifecycleevent');
 var LifecycleLogger = (function () {
     function LifecycleLogger() {
@@ -45,8 +44,7 @@ var LifecycleLogger = (function () {
     LifecycleLogger = __decorate([
         core_1.Component({
             selector: 'lifecycle-logger',
-            template: "\n        <div>\n          <h5>List of Lifecycle Events of Component:</h5>\n          <br />\n            <table class=\"table table-condensed table-hover table-bordered\">\n              <thead>\n                <th>#</th>\n                <th>Component Name</th>\n                <th>Event Name</th>\n              </thead>\n              <tbody>\n                <tr *ngFor=\"let lifecycleEvent of lifecycleEvents, let i=index\">\n                  <td>{{i+1}}</td>\n                  <td>{{lifecycleEvent.componentName}}</td>\n                  <td>{{lifecycleEvent.eventName}}</td>\n                </tr>\n              </tbody>\n            </table>\n        </div>\n    ",
-            directives: [common_1.CORE_DIRECTIVES]
+            template: "\n        <div>\n          <h5>List of Lifecycle Events of Component:</h5>\n          <br />\n            <table class=\"table table-condensed table-hover table-bordered\">\n              <thead>\n                <th>#</th>\n                <th>Component Name</th>\n                <th>Event Name</th>\n              </thead>\n              <tbody>\n                <tr *ngFor=\"let lifecycleEvent of lifecycleEvents, let i=index\">\n                  <td>{{i+1}}</td>\n                  <td>{{lifecycleEvent.componentName}}</td>\n                  <td>{{lifecycleEvent.eventName}}</td>\n                </tr>\n              </tbody>\n            </table>\n        </div>\n    "
         }), 
         __metadata('design:paramtypes', [])
     ], LifecycleLogger);

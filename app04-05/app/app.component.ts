@@ -1,9 +1,6 @@
 import {Component} from '@angular/core';
-import {CORE_DIRECTIVES} from '@angular/common';
 
-import {LifecycleLogger} from './lifecyclelogger';
 import {LifecycleEvent} from './lifecycleevent';
-import {TestComponent} from './testcomponent';
 
 @Component({
   selector: 'my-app',
@@ -26,10 +23,9 @@ import {TestComponent} from './testcomponent';
         </div>
       </div>
     </div>
-    `,
-    directives: [CORE_DIRECTIVES, LifecycleLogger, TestComponent]
+    `
 })
-export class App {
+export class AppComponent {
   lifecycleEvents:Array<LifecycleEvent>;
   value1: string;
   constructor() {

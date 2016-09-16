@@ -9,51 +9,47 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var common_1 = require('@angular/common');
-var lifecyclelogger_1 = require('./lifecyclelogger');
 var lifecycleevent_1 = require('./lifecycleevent');
-var testcomponent_1 = require('./testcomponent');
-var App = (function () {
-    function App() {
+var AppComponent = (function () {
+    function AppComponent() {
         this.lifecycleEvents = [];
         this.value1 = '';
     }
-    App.prototype.clearList = function () {
+    AppComponent.prototype.clearList = function () {
         this.lifecycleEvents = [];
     };
-    App.prototype.ngOnInit = function () {
+    AppComponent.prototype.ngOnInit = function () {
         this.lifecycleEvents.push(new lifecycleevent_1.LifecycleEvent("MyApp", "ngOnInit"));
     };
-    App.prototype.ngOnChanges = function (changeRecord) {
+    AppComponent.prototype.ngOnChanges = function (changeRecord) {
         this.lifecycleEvents.push(new lifecycleevent_1.LifecycleEvent("MyApp", "ngOnChanges"));
     };
-    App.prototype.ngDoCheck = function () {
+    AppComponent.prototype.ngDoCheck = function () {
         this.lifecycleEvents.push(new lifecycleevent_1.LifecycleEvent("MyApp", "ngDoCheck"));
     };
-    App.prototype.ngAfterContentInit = function () {
+    AppComponent.prototype.ngAfterContentInit = function () {
         this.lifecycleEvents.push(new lifecycleevent_1.LifecycleEvent("MyApp", "ngAfterContentInit"));
     };
-    App.prototype.ngAfterContentChecked = function () {
+    AppComponent.prototype.ngAfterContentChecked = function () {
         this.lifecycleEvents.push(new lifecycleevent_1.LifecycleEvent("MyApp", "ngAfterContentChecked"));
     };
-    App.prototype.ngAfterViewInit = function () {
+    AppComponent.prototype.ngAfterViewInit = function () {
         this.lifecycleEvents.push(new lifecycleevent_1.LifecycleEvent("MyApp", "ngAfterViewInit"));
     };
-    App.prototype.ngAfterViewChecked = function () {
+    AppComponent.prototype.ngAfterViewChecked = function () {
         this.lifecycleEvents.push(new lifecycleevent_1.LifecycleEvent("MyApp", "ngAfterViewChecked"));
     };
-    App.prototype.ngOnDestroy = function () {
+    AppComponent.prototype.ngOnDestroy = function () {
         this.lifecycleEvents.push(new lifecycleevent_1.LifecycleEvent("MyApp", "ngOnDestroy"));
     };
-    App = __decorate([
+    AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n    <div class=\"panel panel-primary\">\n      <div class=\"panel-heading\">Component Lifecycle Event Tracker</div>\n      <div class=\"panel-body\">\n        <div>\n           <p>Input: <input [(ngModel)]=\"value1\"></p>\n           <p><strong>Value1 in MyApp Component: {{value1}}</strong></p>\n        </div>\n        <hr />\n        <div>\n          <test-component [lifecycleEvents]=\"lifecycleEvents\" [value1]=\"value1\"></test-component>\n        <div>\n        <hr />\n        <div>\n          <button class=\"btn btn-sm btn-primary pull-right\" (click)=\"clearList()\">Clear List</button>\n          <lifecycle-logger [lifecycleEvents]=\"lifecycleEvents\"></lifecycle-logger>\n        </div>\n      </div>\n    </div>\n    ",
-            directives: [common_1.CORE_DIRECTIVES, lifecyclelogger_1.LifecycleLogger, testcomponent_1.TestComponent]
+            template: "\n    <div class=\"panel panel-primary\">\n      <div class=\"panel-heading\">Component Lifecycle Event Tracker</div>\n      <div class=\"panel-body\">\n        <div>\n           <p>Input: <input [(ngModel)]=\"value1\"></p>\n           <p><strong>Value1 in MyApp Component: {{value1}}</strong></p>\n        </div>\n        <hr />\n        <div>\n          <test-component [lifecycleEvents]=\"lifecycleEvents\" [value1]=\"value1\"></test-component>\n        <div>\n        <hr />\n        <div>\n          <button class=\"btn btn-sm btn-primary pull-right\" (click)=\"clearList()\">Clear List</button>\n          <lifecycle-logger [lifecycleEvents]=\"lifecycleEvents\"></lifecycle-logger>\n        </div>\n      </div>\n    </div>\n    "
         }), 
         __metadata('design:paramtypes', [])
-    ], App);
-    return App;
+    ], AppComponent);
+    return AppComponent;
 }());
-exports.App = App;
+exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map
